@@ -7,7 +7,7 @@
 <p align="center">
   <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a>
   <a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
-  <a href="https://github.com/ishandutta2007/Awesome-Real-Time-Interaction-Management-Rtim/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Real-Time-Interaction-Management-Rtim?style=social" alt="GitHub Stars" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Real-Time-Interaction-Management-Rtim/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Real-Time-Interaction-Management-Rtim?style=social" alt="GitHub_Stars" /></a>
   <a href="https://github.com/ishandutta2007/Awesome-Real-Time-Interaction-Management-Rtim/network/members"><img src="https://img.shields.io/github/forks/ishandutta2007/Awesome-Real-Time-Interaction-Management-Rtim?style=social" alt="GitHub Forks" /></a>
   <a href="https://github.com/ishandutta2007/Awesome-Real-Time-Interaction-Management-Rtim/issues"><img src="https://img.shields.io/github/issues/ishandutta2007/Awesome-Real-Time-Interaction-Management-Rtim?style=flat-square&color=blue" alt="Open Issues" /></a>
   <a href="https://github.com/ishandutta2007/Awesome-Real-Time-Interaction-Management-Rtim/blob/main/LICENSE"><img src="https://img.shields.io/github/license/ishandutta2007/Awesome-Real-Time-Interaction-Management-Rtim?style=flat-square&color=green" alt="License" /></a>
@@ -68,9 +68,9 @@ Enterprise SaaS platforms evaluated by company scale (revenue / market valuation
 
 Explore the top open-source projects providing building blocks for Real-Time Interaction Management—ranging from vector memory and analytics to contextual recommendation engines, feature flags, and event orchestration.
 
-Sorted by **GitHub Star Count** (descending):
+Sorted by **GitHub Stars_Count** (descending):
 
-| 📦 Repository & Project | ⭐ GitHub Stars | ⚖️ License | 📝 Description & RTIM Architectural Role |
+| 📦 Repository & Project | ⭐ GitHub_Stars | ⚖️ License | 📝 Description & RTIM Architectural Role |
 | :--- | :--- | :--- | :--- |
 | [**milvus-io/milvus**](https://github.com/milvus-io/milvus) | [![Stars](https://img.shields.io/github/stars/milvus-io/milvus?style=social&color=white)](https://github.com/milvus-io/milvus/stargazers) | Apache-2.0 | High-performance, cloud-native vector database built for massive-scale semantic similarity search and millisecond recommendation candidate generation. |
 | [**PostHog/posthog**](https://github.com/PostHog/posthog) | [![Stars](https://img.shields.io/github/stars/PostHog/posthog?style=social&color=white)](https://github.com/PostHog/posthog/stargazers) | MIT | All-in-one developer platform featuring real-time product analytics, session replay, feature flags, user cohort segmentation, and client/server-side experiment rollout. |
