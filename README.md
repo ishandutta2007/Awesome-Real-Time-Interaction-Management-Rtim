@@ -38,6 +38,8 @@ Contributions welcome! Open a PR to add/update entries. Keep descriptions factua
 
 - [How to Contribute](#how-to-contribute)
 
+- [Star History](#star-history)
+
 - [Disclaimer](#disclaimer)
 
 
@@ -225,6 +227,12 @@ Contributions welcome! Open a PR to add/update entries. Keep descriptions factua
 
 
 Star the repo if you find it useful!
+
+
+
+## Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=ishandutta2007/Awesome-Real-Time-Interaction-Management-Rtim&type=Date)](https://star-history.com/#ishandutta2007/Awesome-Real-Time-Interaction-Management-Rtim&Date)
 
 
 
