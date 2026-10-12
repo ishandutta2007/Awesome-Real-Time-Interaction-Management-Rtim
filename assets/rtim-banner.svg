@@ -1,0 +1,159 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0f1d" />
+      <stop offset="50%" stop-color="#0d1b2a" />
+      <stop offset="100%" stop-color="#1b263b" />
+    </linearGradient>
+
+    <linearGradient id="primaryGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00f2fe" />
+      <stop offset="100%" stop-color="#4facfe" />
+    </linearGradient>
+
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#f857a6" />
+      <stop offset="100%" stop-color="#ff5858" />
+    </linearGradient>
+
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="rgba(255, 255, 255, 0.08)" />
+      <stop offset="100%" stop-color="rgba(255, 255, 255, 0.02)" />
+    </linearGradient>
+
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+
+    <style>
+      .glow-particle {
+        animation: pulse 4s ease-in-out infinite alternate;
+      }
+      .flow-path {
+        stroke-dasharray: 8 12;
+        animation: flowDash 20s linear infinite;
+      }
+      .node-pulse {
+        animation: ping 3s cubic-bezier(0, 0, 0.2, 1) infinite;
+      }
+      @keyframes flowDash {
+        to {
+          stroke-dashoffset: -200;
+        }
+      }
+      @keyframes pulse {
+        0% { opacity: 0.3; transform: scale(0.98); }
+        100% { opacity: 0.8; transform: scale(1.02); }
+      }
+      @keyframes ping {
+        0% { r: 4px; opacity: 1; }
+        75%, 100% { r: 12px; opacity: 0; }
+      }
+      .title-text {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        font-weight: 800;
+        letter-spacing: -0.5px;
+      }
+      .sub-text {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        font-weight: 500;
+        letter-spacing: 0.2px;
+      }
+      .badge-text {
+        font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+        font-weight: 600;
+        font-size: 11px;
+      }
+    </style>
+  </defs>
+
+  <!-- Background Base -->
+  <rect width="1200" height="360" rx="16" fill="url(#bgGrad)" />
+
+  <!-- Dynamic Ambient Background Glow -->
+  <g class="glow-particle">
+    <circle cx="200" cy="80" r="160" fill="#00f2fe" opacity="0.12" filter="url(#glow)" />
+    <circle cx="1020" cy="260" r="180" fill="#f857a6" opacity="0.1" filter="url(#glow)" />
+    <circle cx="600" cy="180" r="120" fill="#4facfe" opacity="0.08" filter="url(#glow)" />
+  </g>
+
+  <!-- Dynamic Interaction Stream Lines (Background Animation) -->
+  <g opacity="0.45">
+    <path class="flow-path" d="M -50 90 Q 300 30, 600 110 T 1250 80" fill="none" stroke="url(#primaryGrad)" stroke-width="2" />
+    <path class="flow-path" d="M -50 280 Q 350 330, 700 250 T 1250 290" fill="none" stroke="url(#accentGrad)" stroke-width="2" style="animation-duration: 15s; animation-direction: reverse;" />
+    <path class="flow-path" d="M -50 190 Q 400 130, 800 210 T 1250 160" fill="none" stroke="#4facfe" stroke-width="1.5" stroke-opacity="0.6" style="animation-duration: 25s;" />
+  </g>
+
+  <!-- Subtle Metric Flow Nodes -->
+  <g>
+    <circle cx="280" cy="95" r="4" fill="#00f2fe" />
+    <circle class="node-pulse" cx="280" cy="95" r="4" fill="#00f2fe" />
+    
+    <circle cx="820" cy="235" r="4" fill="#f857a6" />
+    <circle class="node-pulse" cx="820" cy="235" r="4" fill="#f857a6" style="animation-delay: 1.5s;" />
+  </g>
+
+  <!-- Center Content Container / Cards -->
+  <g id="main-content">
+    <!-- Top Category Tag -->
+    <g transform="translate(600, 52)">
+      <rect x="-170" y="-14" width="340" height="28" rx="14" fill="rgba(0, 242, 254, 0.12)" stroke="rgba(0, 242, 254, 0.35)" stroke-width="1" />
+      <text class="badge-text" x="0" y="4" text-anchor="middle" fill="#00f2fe" letter-spacing="1.5">⚡ REAL-TIME INTERACTION MANAGEMENT</text>
+    </g>
+
+    <!-- Main Title -->
+    <text class="title-text" x="600" y="125" text-anchor="middle" font-size="38" fill="#ffffff">
+      Awesome Real-Time Interaction Management
+    </text>
+
+    <!-- Subtitle / Tagline -->
+    <text class="sub-text" x="600" y="165" text-anchor="middle" font-size="16" fill="#94a3b8">
+      Curated Ecosystem of Next-Best-Action Decisioning, Real-Time Personalization &amp; Omnichannel Orchestration
+    </text>
+
+    <!-- Interactive Pillar Cards -->
+    <g transform="translate(600, 240)">
+      <!-- Card 1: Decisioning -->
+      <g transform="translate(-360, 0)">
+        <rect x="-105" y="-36" width="210" height="72" rx="12" fill="url(#cardGrad)" stroke="rgba(255, 255, 255, 0.12)" stroke-width="1" />
+        <circle cx="-75" cy="0" r="16" fill="rgba(0, 242, 254, 0.15)" />
+        <text x="-75" y="5" text-anchor="middle" font-size="16">🎯</text>
+        <text class="title-text" x="-48" y="-6" font-size="14" fill="#ffffff">Next-Best-Action</text>
+        <text class="sub-text" x="-48" y="14" font-size="11" fill="#64748b">Sub-50ms Rules &amp; ML</text>
+      </g>
+
+      <!-- Card 2: Personalization -->
+      <g transform="translate(-120, 0)">
+        <rect x="-105" y="-36" width="210" height="72" rx="12" fill="url(#cardGrad)" stroke="rgba(255, 255, 255, 0.12)" stroke-width="1" />
+        <circle cx="-75" cy="0" r="16" fill="rgba(79, 172, 254, 0.15)" />
+        <text x="-75" y="5" text-anchor="middle" font-size="16">🧠</text>
+        <text class="title-text" x="-48" y="-6" font-size="14" fill="#ffffff">Personalization</text>
+        <text class="sub-text" x="-48" y="14" font-size="11" fill="#64748b">Contextual &amp; Behavioral</text>
+      </g>
+
+      <!-- Card 3: Journey Orchestration -->
+      <g transform="translate(120, 0)">
+        <rect x="-105" y="-36" width="210" height="72" rx="12" fill="url(#cardGrad)" stroke="rgba(255, 255, 255, 0.12)" stroke-width="1" />
+        <circle cx="-75" cy="0" r="16" fill="rgba(248, 87, 166, 0.15)" />
+        <text x="-75" y="5" text-anchor="middle" font-size="16">🔄</text>
+        <text class="title-text" x="-48" y="-6" font-size="14" fill="#ffffff">Orchestration</text>
+        <text class="sub-text" x="-48" y="14" font-size="11" fill="#64748b">Omnichannel Journeys</text>
+      </g>
+
+      <!-- Card 4: Open Source -->
+      <g transform="translate(360, 0)">
+        <rect x="-105" y="-36" width="210" height="72" rx="12" fill="url(#cardGrad)" stroke="rgba(255, 255, 255, 0.12)" stroke-width="1" />
+        <circle cx="-75" cy="0" r="16" fill="rgba(52, 211, 153, 0.15)" />
+        <text x="-75" y="5" text-anchor="middle" font-size="16">🚀</text>
+        <text class="title-text" x="-48" y="-6" font-size="14" fill="#ffffff">Open Source &amp; CDP</text>
+        <text class="sub-text" x="-48" y="14" font-size="11" fill="#64748b">Data-Sovereign Stacks</text>
+      </g>
+    </g>
+
+    <!-- Bottom Footer Metrics Tagline -->
+    <text class="sub-text" x="600" y="325" text-anchor="middle" font-size="12" fill="#475569">
+      Curated by Ishan Dutta • Enterprise Platforms, Modern Open-Source Stacks &amp; Real-Time Architecture
+    </text>
+  </g>
+</svg>
